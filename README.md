@@ -1,47 +1,61 @@
 # FMCG Sales Dashboard Project
 
 ## Project Overview
-This project involves the development of a comprehensive business intelligence and analytics solution designed for a Fast-Moving Consumer Goods (FMCG) company. Centered around the core data repository file FMCG Sales Dashboard.xlsx, the dashboard translates large volumes of daily sales logs, distributor transactions, and product metrics into an interactive executive tool. By analyzing performance across various brand portfolios, distribution networks, and regional markets, the project enables sales managers and supply chain leaders to evaluate distribution efficiency, track brand health, and optimize high-velocity product configurations.
+
+This repository contains a Fast-Moving Consumer Goods (FMCG) sales analysis project engineered within a spreadsheet data model. The main purpose of this project is to centralize transactional sales data, distribution channel outputs, and regional logistics metrics into an interactive analytical cockpit. By providing real-time visibility into brand performance, purchase orders, and regional revenue pacing, the dashboard addresses the problem of delayed operational reporting, allowing FMCG stakeholders to quickly isolate low-margin segments and optimize supply chain fulfillment timelines.
 
 ## Requirements
-To meet the high-volume operational standards typical of the FMCG sector, the project fulfills the following core requirements:
 
-Multi-Tiered Data Aggregation: Consolidation of raw tables spanning customer accounts, geography, daily product dispatches, and sales targets into a highly optimized data model within FMCG Sales Dashboard.xlsx.
+Microsoft Excel (2019, 2021, or Microsoft 365 recommended)
 
-Volume and Value Metric Tracking: Synchronized calculation of both value-based metrics (Gross Revenue, Net Sales, Trade Discounts) and volume-based metrics (Units Shipped, Case Volume, Out-of-Stock incidence rates).
+System Memory: Minimum 4 GB RAM (8 GB recommended for multi-year transactional datasets)
 
-Channel Distribution Analytics: Implementation of granular filtration logic to evaluate performance differences across modern trade, traditional retail markets, e-commerce channels, and direct wholesale.
+Operating System: Microsoft Windows or macOS
 
-Scalable Data Loading Framework: A localized layout built to smoothly absorb frequent, high-volume transactional updates without slowing down execution or breaking data hierarchies.
+Prerequisites: Advanced Excel features enabled (Pivot Tables, Slicers, and Advanced Data Formatting)
 
 ## Tools and Technologies
-Microsoft Excel (Advanced Data Modeling Engine): The primary platform used to structure data, map relational tables, and create user-facing visual layouts inside FMCG Sales Dashboard.xlsx.
 
-Power Query Engine: Used for the Extract, Transform, Load (ETL) phase to standardize product descriptions, clean missing distributor data, format timestamps, and build calculated key metrics.
+Core Spreadsheet Platform: Microsoft Excel
 
-Advanced Cross-Filtering Formulas: Implementation of specialized logical lookup and aggregation math—such as SUMIFS, COUNTIFS, INDEX/MATCH, and dynamic arrays—to build flexible data summaries.
+Data Aggregation & Structuring: Excel Pivot Tables
 
-Pivot Tables and Pivot Charts: Utilized to break down large data rows by brand, territory, and channel, instantly changing the visual reporting state based on user inputs.
+Interactivity Control: Multi-Field Slicers (Timeline, SKU, Segment)
 
-Interconnected Slicers and Timelines: Built into the main presentation sheet to serve as a clean navigation menu, allowing users to alter the entire report scope with a single click.
+Visualization Layer: Excel Pivot Charts (Line, Clustered Column, and Donut charts)
 
 ## Challenges Faced
-Massive Transactional Volumetrics: FMCG data scales quickly, and processing thousands of rows across dozens of product variations often created performance lag. Overcoming this required removing redundant formulas and leaning heavily on Excel's optimized internal cache systems.
 
-Channel and Margin Complications: Properly modeling revenue alongside variable distributor discounts, promotional rebates, and returns created initial reporting discrepancies. This required establishing strict data-clearing rules to ensure gross-to-net financial clarity.
+Overcrowded Brand Axis Labels: Attempting to plot revenue for a dense catalog of internal product brands (such as JuBrand, MiBrand, ReBrand, SnBrand, YoBrand sub-variants) led to overlapping text and unreadable category groupings. This layout limitation was overcome by implementing customized label orientations and adjusting chart canvas margins.
 
-Information Density Control: Presenting volume metrics, value metrics, brand categories, and channel parameters simultaneously risked overwhelming the end-user. The solution required an iterative UI design focused on layout hierarchy and consistent color maps.
+Complex Multi-Attribute Slicer Connections: Ensuring that simultaneous filters on chronological timelines, explicit SKU identifiers, and product segments seamlessly updated all charts without causing structural breakage required building unified data mapping tables across separate sheets.
+
+Currency Formatting Overheads: Standardizing high-volume Indian Rupee (₹) pricing strings alongside raw quantity integers caused calculation inconsistencies within early test blocks. This was resolved by implementing strict custom cell-formatting attributes across the transactional table layer.
 
 ## Key Insights
-The Pareto Principle in Product Portfolios: A small, specific set of core SKUs (Stock Keeping Units) drives the vast majority of volume and revenue, indicating that protecting the supply chain for these top items is critical to business health.
 
-Inefficiencies in Promotional Spending: Cross-referencing promotional calendars with volume spikes revealed that certain steep trade discounts failed to generate profitable repeat orders, highlighting a need to re-evaluate trade marketing strategies.
+Dashboard Inference:
 
-Regional Distribution Disconnects: Combining geography and channel analytics showed that high-demand urban sectors frequently faced stock stress, while secondary traditional trade routes held excess safety stock.
+![image alt](https://github.com/rt5899-art/FMCG-Sales-Data-Excel/blob/main/ss-%20FMCG%20sales%20dshboard%20excel.png?raw=true)
 
-## Recommendations for Future Improvements
-Migrate to a Cloud BI Ecosystem: To support true multi-user access and eliminate local file size constraints, the underlying structures of FMCG Sales Dashboard.xlsx should be migrated to a dedicated tool like Power BI or Tableau linked directly to a cloud data warehouse (such as Snowflake or BigQuery).
+Based on the aggregated data compiled in the spreadsheet dashboard interface, the following performance trends were identified:
 
-Automate ERP Data Pipelines: Replace manual spreadsheet data entry with live automated data connections (such as SAP, Oracle, or Microsoft Dynamics connectors) to eliminate manual errors and move from weekly updates to a real-time data flow.
+High-Level Operational Key Performance Indicators: The business generated a Total Revenue of ₹1,99,51,301 across the monitored periods. Total Quantity Sold reached 37,99,824 units, operating under an Average Order Value of ₹104.59, an Average Unit Price of ₹5.25, and maintaining an Avg Delivery Time of 3 days.
 
-Incorporate Predictive Demand Forecasting: Integrate basic predictive algorithms—such as Python-based ARIMA or Holt-Winters exponential smoothing—to generate seasonal demand projections, helping production plants align directly with market movement.
+Temporal Revenue Velocity: Monthly sales trends show sustained growth throughout the first half of the calendar year. Revenue climbs from a low baseline in January (₹11,63,774.83) and February (₹12,40,812.47), building up momentum through the spring before hitting its absolute operational peak in July at ₹20,72,317.43. Following this peak, sales contract through the fall, ending the year with a slight recovery in December at ₹16,55,964.83.
+
+Brand Contribution Matrix: Individual product portfolios exhibit highly varied revenue results. SnBrand2 emerges as the dominant brand leader, generating a massive peak revenue of ₹28,60,430.84. YoBrand4 represents the second most profitable asset at ₹24,73,953.74, while portfolio lines like JuBrand3 and MiBrand2 reflect much smaller revenue contributions.
+
+Regional Fulfillment Discrepancies: Analyzing the sum of delivered quantities across regional boundaries shows that the PL-North sector acts as the primary volume hub, driving 1,14,24,555 units. The PL-South sector matches this pace closely at 1,14,08,432 units, whereas the PL-Central region logs the lowest logistical footprint at 1,13,76,163 units.
+
+Distribution Channel Breakdown: Sales generation is distributed across three main channels. The Discount channel captures the largest overall share of transactions at ₹66,55,587.49, followed closely by traditional Retail channels at ₹66,43,440.51, while E-commerce platforms bring in the remaining revenue share at ₹66,52,273.11.
+
+## Recommendations for Improvements
+
+Maximize Inventory Ahead of the Q3 Seasonal Peak: Since the sales velocity data highlights a clear revenue climb that peaks in July at ₹20,72,317.43, production schedules and warehouse stock levels should be scaled up by 15-20% in late Q2 to capitalize on this high-volume period and prevent regional stockouts.
+
+Replicate SnBrand2 Marketing Strategies: SnBrand2 is the top performer in the portfolio, generating ₹28,60,430.84 in revenue. A detailed product audit should be conducted to isolate why it outperforms the rest of the catalog, allowing the team to apply its pricing models, flavor profiles, or packaging choices to struggling lines like JuBrand3.
+
+Address Logistics Gaps in the Central Region: The PL-Central region represents the lowest distribution tier at 1,13,76,163 units. Supply chain networks should be audited in this territory to determine if the lower volume is caused by infrastructure issues or a lack of local retail partnerships.
+
+Implement Target Promotions on E-commerce Channels: Because revenue is split almost evenly between Discount (₹66,55,587.49), Retail (₹66,43,440.51), and E-commerce (₹66,52,273.11), the digital channel should be prioritized for higher-margin premium SKUs. This will help raise the Average Order Value above the current ₹104.59 benchmark.
