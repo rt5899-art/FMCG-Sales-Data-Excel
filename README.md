@@ -1,61 +1,53 @@
-# FMCG Sales Dashboard Project
+## Sales Revenue & Growth Monitor
 
-## Project Overview
+### Project Overview
 
-This repository contains a Fast-Moving Consumer Goods (FMCG) sales analysis project engineered within a spreadsheet data model. The main purpose of this project is to centralize transactional sales data, distribution channel outputs, and regional logistics metrics into an interactive analytical cockpit. By providing real-time visibility into brand performance, purchase orders, and regional revenue pacing, the dashboard addresses the problem of delayed operational reporting, allowing FMCG stakeholders to quickly isolate low-margin segments and optimize supply chain fulfillment timelines.
+This project delivers a comprehensive Fast-Moving Consumer Goods (FMCG) sales analytics solution designed to track, model, and evaluate commercial performance. Built directly within Microsoft Excel, the interactive dashboard processes high-volume transactional data to isolate key drivers across brand performance, regional distribution networks, and fulfillment channels, empowering management with rapid, data-backed operational visibility.
 
-## Requirements
+### Tools & Technologies
 
-Microsoft Excel (2019, 2021, or Microsoft 365 recommended)
+Platform: Microsoft Excel
 
-System Memory: Minimum 4 GB RAM (8 GB recommended for multi-year transactional datasets)
+Data Processing: Power Query (ETL pipeline creation and data cleaning)
 
-Operating System: Microsoft Windows or macOS
+Analytics Architecture: Pivot Tables, Advanced Excel Formulas, and dynamic Slicers (Time, SKU, and Segment filtering)
 
-Prerequisites: Advanced Excel features enabled (Pivot Tables, Slicers, and Advanced Data Formatting)
+Visualization: Custom charts and dynamic KPI cards
 
-## Tools and Technologies
-
-Core Spreadsheet Platform: Microsoft Excel
-
-Data Aggregation & Structuring: Excel Pivot Tables
-
-Interactivity Control: Multi-Field Slicers (Timeline, SKU, Segment)
-
-Visualization Layer: Excel Pivot Charts (Line, Clustered Column, and Donut charts)
-
-## Challenges Faced
-
-Overcrowded Brand Axis Labels: Attempting to plot revenue for a dense catalog of internal product brands (such as JuBrand, MiBrand, ReBrand, SnBrand, YoBrand sub-variants) led to overlapping text and unreadable category groupings. This layout limitation was overcome by implementing customized label orientations and adjusting chart canvas margins.
-
-Complex Multi-Attribute Slicer Connections: Ensuring that simultaneous filters on chronological timelines, explicit SKU identifiers, and product segments seamlessly updated all charts without causing structural breakage required building unified data mapping tables across separate sheets.
-
-Currency Formatting Overheads: Standardizing high-volume Indian Rupee (₹) pricing strings alongside raw quantity integers caused calculation inconsistencies within early test blocks. This was resolved by implementing strict custom cell-formatting attributes across the transactional table layer.
-
-## Key Insights
-
-Dashboard Inference:
+#### Dashboard Preview
 
 ![image alt](https://github.com/rt5899-art/FMCG-Sales-Data-Excel/blob/main/ss-%20FMCG%20sales%20dshboard%20excel.png?raw=true)
 
-Based on the aggregated data compiled in the spreadsheet dashboard interface, the following performance trends were identified:
+### Key Business Insights
 
-High-Level Operational Key Performance Indicators: The business generated a Total Revenue of ₹1,99,51,301 across the monitored periods. Total Quantity Sold reached 37,99,824 units, operating under an Average Order Value of ₹104.59, an Average Unit Price of ₹5.25, and maintaining an Avg Delivery Time of 3 days.
+* High-Level Financial Performance: Generated Total Revenue of ₹1,99,51,301 with a massive volume throughput of 3,799,824 Total Quantity Sold.
 
-Temporal Revenue Velocity: Monthly sales trends show sustained growth throughout the first half of the calendar year. Revenue climbs from a low baseline in January (₹11,63,774.83) and February (₹12,40,812.47), building up momentum through the spring before hitting its absolute operational peak in July at ₹20,72,317.43. Following this peak, sales contract through the fall, ending the year with a slight recovery in December at ₹16,55,964.83.
+* Transaction Efficiencies: Maintained a lean transactional framework with an Average Order Value of ₹104.59 and a low Average Unit Price of ₹5.25, typical of high-velocity FMCG operations.
 
-Brand Contribution Matrix: Individual product portfolios exhibit highly varied revenue results. SnBrand2 emerges as the dominant brand leader, generating a massive peak revenue of ₹28,60,430.84. YoBrand4 represents the second most profitable asset at ₹24,73,953.74, while portfolio lines like JuBrand3 and MiBrand2 reflect much smaller revenue contributions.
+* Fulfillment Velocity: Achieved highly competitive logistics efficiency with an Avg Delivery Time of 3 days.
 
-Regional Fulfillment Discrepancies: Analyzing the sum of delivered quantities across regional boundaries shows that the PL-North sector acts as the primary volume hub, driving 1,14,24,555 units. The PL-South sector matches this pace closely at 1,14,08,432 units, whereas the PL-Central region logs the lowest logistical footprint at 1,13,76,163 units.
+* Seasonal Sales Trends: Monthly revenue exhibits a steady ramp-up through the first half of the year, peaking in July at ₹20,72,317.43, before experiencing a gradual, plateaued contraction through the winter months.
 
-Distribution Channel Breakdown: Sales generation is distributed across three main channels. The Discount channel captures the largest overall share of transactions at ₹66,55,587.49, followed closely by traditional Retail channels at ₹66,43,440.51, while E-commerce platforms bring in the remaining revenue share at ₹66,52,273.11.
+* Brand Dominance: Out of nearly twenty active brands, SnBrand2 emerged as the clear market leader, single-handedly generating ₹28,60,430.84 in revenue.
 
-## Recommendations for Improvements
+* Regional and Channel Layout: * Geography: Regional performance is led by PL-North (11,424,555 units delivered), closely followed by PL-South, with PL-Central lagging behind.
 
-Maximize Inventory Ahead of the Q3 Seasonal Peak: Since the sales velocity data highlights a clear revenue climb that peaks in July at ₹20,72,317.43, production schedules and warehouse stock levels should be scaled up by 15-20% in late Q2 to capitalize on this high-volume period and prevent regional stockouts.
+* Channels: Revenue distribution across Retail, E-commerce, and Discount channels remains relatively balanced, though E-commerce represents a significant core pillar with ₹66,53,435.41.
 
-Replicate SnBrand2 Marketing Strategies: SnBrand2 is the top performer in the portfolio, generating ₹28,60,430.84 in revenue. A detailed product audit should be conducted to isolate why it outperforms the rest of the catalog, allowing the team to apply its pricing models, flavor profiles, or packaging choices to struggling lines like JuBrand3.
+### Strategic Recommendations
 
-Address Logistics Gaps in the Central Region: The PL-Central region represents the lowest distribution tier at 1,13,76,163 units. Supply chain networks should be audited in this territory to determine if the lower volume is caused by infrastructure issues or a lack of local retail partnerships.
+Insight: Sales peak aggressively in July (₹20.72L) and decline to their lowest levels in January (₹11.63L).
 
-Implement Target Promotions on E-commerce Channels: Because revenue is split almost evenly between Discount (₹66,55,587.49), Retail (₹66,43,440.51), and E-commerce (₹66,52,273.11), the digital channel should be prioritized for higher-margin premium SKUs. This will help raise the Average Order Value above the current ₹104.59 benchmark.
+* Action: Align marketing budgets and inventory stockpiling to maximize return during the high-demand summer peak, while introducing aggressive promotional bundles in Q1 to smooth out seasonal troughs.
+
+Insight: SnBrand2 is a stellar performer driving ₹2.86M in revenue, whereas brands like MiBrand2 struggle to cross ₹500K.
+
+* Action: Conduct a portfolio review to extract the marketing and product placement playbook of SnBrand2 and apply it to underperforming brands, while phasing out or consolidating dead stock.
+
+Insight: PL-North leads in logistics volume with over 11.42M units delivered, while PL-Central underperforms.
+
+* Action: Audit supply chain efficiencies in the Northern region to standardize fulfillment best practices, and run localized consumer preference testing in the Central region to spark demand.
+
+Insight: Average delivery time stands firm at a rapid 3 days.
+
+Action: Leverage this fast-fulfillment capability as a core value proposition in E-commerce marketing campaigns to capture market share from slower-delivering competitors.
