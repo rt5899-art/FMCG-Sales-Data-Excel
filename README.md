@@ -50,4 +50,4 @@ Insight: PL-North leads in logistics volume with over 11.42M units delivered, wh
 
 Insight: Average delivery time stands firm at a rapid 3 days.
 
-Action: Leverage this fast-fulfillment capability as a core value proposition in E-commerce marketing campaigns to capture market share from slower-delivering competitors.
+* Action: Leverage this fast-fulfillment capability as a core value proposition in E-commerce marketing campaigns to capture market share from slower-delivering competitors.
