@@ -16,7 +16,7 @@ Visualization: Custom charts and dynamic KPI cards
 
 #### Dashboard Preview
 
-![image alt](https://github.com/rt5899-art/FMCG-Sales-Data-Excel/blob/main/ss-%20FMCG%20sales%20dshboard%20excel.png?raw=true)
+![image alt](https://github.com/rt5899-art/FMCG-Sales-Data-Excel/blob/main/final_fmcg_excel.png?raw=true)
 
 ### Key Business Insights
 
